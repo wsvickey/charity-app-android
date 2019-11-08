@@ -1,0 +1,13 @@
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recyclerView"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/low"
+    android:paddingRight="@dimen/low"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.jachdev.android.memorial.fragment.HomeFragment"
+    app:layoutManager="LinearLayoutManager"
+    tools:listitem="@layout/item_category" />

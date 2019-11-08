@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tech.agape4charity.activity.SearchActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/searchResults"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/low"
+        android:paddingRight="@dimen/low"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_organization" />
+
+</LinearLayout>

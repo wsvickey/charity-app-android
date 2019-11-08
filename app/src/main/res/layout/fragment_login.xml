@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:paddingTop="@dimen/toolBarHeight"
+    tools:context="com.tech.agape4charity.fragment.LoginFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_logo"
+        android:layout_marginTop="@dimen/high"
+        android:layout_gravity="center|top"
+        android:layout_width="@dimen/logoWidth"
+        android:layout_height="@dimen/logoHeight" />
+    
+
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/medium"
+        android:layout_marginLeft="@dimen/high"
+        android:layout_marginRight="@dimen/high"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.tech.agape4charity.widget.EditTextDefault
+            android:id="@+id/etEmail"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            style="@style/EditText" />
+
+        <View style="@style/Separator" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/medium"
+        android:layout_marginBottom="@dimen/medium"
+        android:layout_marginLeft="@dimen/high"
+        android:layout_marginRight="@dimen/high"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.tech.agape4charity.widget.EditTextDefault
+            android:id="@+id/etPassword"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            style="@style/EditText" />
+
+        <View style="@style/Separator" />
+
+    </FrameLayout>
+
+    <com.tech.agape4charity.widget.CustomButton
+        android:id="@+id/btnLogin"
+        android:layout_marginLeft="@dimen/high"
+        android:layout_marginRight="@dimen/high"
+        android:text="@string/login"
+        style="@style/ButtonWhite" />
+
+    <com.tech.agape4charity.widget.CustomButton
+        android:id="@+id/btnSignUp"
+        android:text="@string/sign_up"
+        android:textColor="@color/textColorButton"
+        android:layout_marginLeft="@dimen/high"
+        android:layout_marginRight="@dimen/high"
+        android:layout_marginTop="@dimen/medium"
+        android:layout_marginBottom="@dimen/medium"
+        android:background="@drawable/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <com.tech.agape4charity.widget.TextViewNormal
+        android:id="@+id/tvFgtPw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/high"
+        android:layout_marginRight="@dimen/high"
+        android:layout_marginTop="@dimen/medium"
+        android:text="@string/fgtpw"
+        android:gravity="right"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

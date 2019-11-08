@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tech.agape4charity.activity.InfoActivity"
+    tools:showIn="@layout/activity_infor">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnWeb"
+                android:textColor="@color/white"
+                android:background="@drawable/ic_web"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/medium"
+                android:text="Website" />
+
+            <ImageButton
+                android:padding="@dimen/low"
+                android:id="@+id/btnContact"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/ic_call"
+                android:text="Contact" />
+        </LinearLayout>
+
+        <com.tech.agape4charity.widget.TextViewNormal
+            android:id="@+id/tvEventText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:text="@string/large_text" />
+
+        <com.tech.agape4charity.widget.TextViewNormal
+            android:id="@+id/tvCustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:text="@string/large_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.tech.agape4charity.widget.CustomButton
+                android:id="@+id/btnAddToMyList"
+                android:text="@string/add_to_my_charity"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:textColor="@color/textPrimary"
+                android:background="@drawable/button_secondary"
+                style="@style/ButtonWhite" />
+
+            <com.tech.agape4charity.widget.CustomButton
+                android:id="@+id/btnStatus"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:background="@drawable/button_primary"
+                style="@style/ButtonWhite" />
+
+            <com.tech.agape4charity.widget.CustomButton
+                android:id="@+id/btnRemove"
+                android:visibility="gone"
+                android:text="@string/remove"
+                android:textColor="@color/button_primary"
+                android:background="@drawable/button_secondary"
+                style="@style/ButtonWhite" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

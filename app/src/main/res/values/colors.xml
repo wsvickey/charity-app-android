@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>0f2f08
+    <!--<color name="colorPrimary">#00bcd4</color>-->
+    <!--<color name="colorPrimaryDark">#FF00ADD4</color>-->
+    <!--<color name="colorAccent">#FF00ADD4</color>-->
+    <color name="colorPrimary">#0f2f08</color>
+    <color name="colorPrimaryDark">#0f2f08</color>
+    <color name="colorAccent">#0f2f08</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="transparent_blur">#75202124</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textPrimary">#202124</color>
+    <color name="textSecondary">#617389</color>
+    <color name="textNormal">#1b1b1b</color>
+
+    <color name="textColorButton">#0d3564</color>
+    <color name="white_selected">#faf6f6</color>
+    <color name="button_sign_up">#9f304d</color>
+    <color name="button_sign_up_selected">#b63959</color>
+    <color name="button_primary">#202124</color>
+    <color name="button_primary_disabled">#a9202124</color>
+    <color name="amount">#549626 </color>
+</resources>

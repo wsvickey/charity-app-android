@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="8dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        android:layout_margin="2dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/mainItem"
+                android:layout_margin="@dimen/medium"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.tech.agape4charity.widget.TextViewTitle
+                        android:id="@+id/tvTitle"
+                        android:textSize="20sp"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="@dimen/low"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/iBtnReminder"
+                        card_view:srcCompat="@drawable/ic_reminder"
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <ImageView
+                        android:id="@+id/iBtnInfo"
+                        android:src="@drawable/ic_info"
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+
+
+                <com.tech.agape4charity.widget.TextViewNormal
+                    android:id="@+id/tvCategory"
+                    android:textSize="16sp"
+                    android:textColor="@color/textSecondary"
+                    android:layout_marginBottom="@dimen/low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivLocation"
+                            android:src="@drawable/ic_location"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                        <com.tech.agape4charity.widget.TextViewNormal
+                            android:id="@+id/tvLocation"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="@dimen/low"
+                            android:textColor="@color/textSecondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivCalendarIcon"
+                            android:src="@drawable/ic_event_calender"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                        <com.tech.agape4charity.widget.TextViewNormal
+                            android:id="@+id/tvDate"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="@dimen/low"
+                            android:textColor="@color/textSecondary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutOrg"
+                android:visibility="visible"
+                android:background="@color/button_primary"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnAddToMyCharity"
+                    android:layout_weight="1"
+                    android:text="@string/add_to_my_charity"
+                    android:textColor="@color/textPrimary"
+                    android:background="@drawable/button_left"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_width="0dp" />
+
+                <Button
+                    android:id="@+id/btnDonate"
+                    android:layout_weight="1"
+                    android:text="@string/sign_up"
+                    android:layout_marginLeft="0.5dp"
+                    android:textColor="@color/textPrimary"
+                    android:background="@drawable/button_right"
+                    android:layout_height="30dp"
+                    android:layout_width="0dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutMyList"
+                android:visibility="gone"
+                android:background="@color/textPrimary"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnMore"
+                    android:layout_weight="1"
+                    android:text="@string/more"
+                    android:textColor="@color/textPrimary"
+                    android:background="@drawable/button_left"
+                    android:layout_height="40dp"
+                    android:layout_width="0dp" />
+
+                <Button
+                    android:id="@+id/btnAddNote"
+                    android:layout_weight="1"
+                    android:text="@string/add_note"
+                    android:textColor="@color/textPrimary"
+                    android:background="@drawable/button_middle_selector"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="40dp"
+                    android:layout_width="0dp" />
+
+
+                <Button
+                    android:id="@+id/btnStatus"
+                    android:layout_weight="1"
+                    android:text="@string/status"
+                    android:textColor="@color/textPrimary"
+                    android:background="@drawable/button_right"
+                    android:layout_height="40dp"
+                    android:layout_width="0dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
